@@ -1,14 +1,73 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Название проекта</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script>
-  </head>
-  <body class="page__body">
-    <header class="header">Шапка</header>
-    <p>Hadoooken! x 2</p>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Магазин Кэт энерджи</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body class="page__body index-body">
+
+  <header class="main-header">
+    <nav class="main-header__navigation">
+      <a class="main-header__logo" href="#">
+        <img class="main-header__logo-image" src="#" width="209" height="59" alt="Логотип магазина Кэт энерджи.">
+      </a>
+      <ul class="main-header__list site-navigation">
+        <li class="main-header__item">
+          <a class="main-header__link" href="#">
+            Главная
+            <span class="visually-hidden">Переход на главную страницу сайта.</span>
+          </a>
+        </li>
+        <li class="main-header__item">
+          <a class="main-header__link" href="#">
+            Каталог продукции
+            <span class="visually-hidden">Переход на страницу каталога.</span>
+          </a>
+        </li>
+        <li class="main-header__item">
+          <a class="main-header__link" href="#">
+            Подбор программы
+            <span class="visually-hidden">Переход на страницу подбора программы.</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="index-body__main index-main">
+    <h1 class="visually-hidden">Магазин Кэт энерджи.</h1>
+
+    <section class="index-main__hero hero">
+      <div class="hero__discription-wrapper discription-wrapper">
+        <h2 class="section-title">Функциональное питание для котов</h2>
+        <p class="discription-wrapper__slogan">Занялся собой? Займись котом!</p>
+        <a class="hero__button primary-button" href="#">Подобрать программу</a>
+      </div>
+      <img class="hero__image" width="552" height="499" src="#" alt="Пластиковая банка кошачьей еды.">
+    </section>
+
+    <section class="index-main__product-section product-section">
+      <h2 class="visually-hidden">Программы питания</h2>
+      <ul class="product-section__list product-list">
+        <li class="product-section__item description-text">
+          <h3 class="product-list__title">Похудение</h3>
+          <p class="product-list__description">Ваш кот весит больше собаки и почти утратил способность<br> лазить по деревьям? Пора на диету! Cat Energy Slim поможет<br> вашему питомцу сбросить лишний вес.</p>
+          <a class="product-list__link" href="#">Каталог slim</a>
+        </li>
+        <li class="product-section__item">
+          <h3 class="product-list__title">Набор массы</h3>
+          <p class="product-list__description description-text">Заработать авторитет среди дворовых котов и даже собак?<br> Серия Cat Energy Pro поможет вашему коту нарастить<br> необходимые мышцы!</p>
+          <a class="product-list__link" href="#">Каталог pro</a>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+</body>
+
 </html>
