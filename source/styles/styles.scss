@@ -3,6 +3,7 @@
 @import "./common/mixins.scss";
 @import "./common/fonts.scss";
 @import "./common/global.scss";
+@import "./common/visually-hidden.scss";
 
 /* BLOCKS */
 @import "./blocks/index-body.scss";
@@ -13,13 +14,14 @@
 @import "./blocks/hero.scss";
 @import "./blocks/product-list.scss";
 @import "./blocks/argument.scss";
-@import "./blocks/map.scss";
 @import "./blocks/catalog-list.scss";
 @import "./blocks/item-title.scss";
 @import "./blocks/catalog-section-title.scss";
 @import "./blocks/additional-products-list.scss";
-@import "./blocks/common-text.scss";
+@import "./blocks/inner-list.scss";
 @import "./blocks/gift-wrapper.scss";
 @import "./blocks/gift-text.scss";
 @import "./blocks/subscription.scss";
+@import "./blocks/map.scss";
+@import "./blocks/main-footer.scss";
 
