@@ -1,0 +1,36 @@
+.case-result {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.case-result__wrapper {
+  margin-bottom: 35px;
+}
+
+.case-result__parameter {
+  @include text-format ($second-font, 24px, 100%, $second-text-color);
+  position: relative;
+  width: 124px;
+  height: 56;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  margin: 0;
+}
+
+.case-result__parameter-description {
+  @include text-format ($primary-font, 12px, 100%, $primary-text-color);
+  position: absolute;
+  width: 87px;
+  height: 31px;
+  top: 47px;
+  left: 18px;
+  font-size: 12px;
+  line-height: 100%;
+  text-align: center;
+  background-color: #eaeaea;
+}
+
+.case-result__price {
+  margin: 0;
+}

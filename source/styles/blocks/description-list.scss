@@ -1,0 +1,74 @@
+.description-list {
+  display: grid;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 250px);
+    grid-template-rows: repeat(2, 280px);
+    gap: 37px 137px;
+  }
+}
+
+.description-list__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-items: start;
+    width: 250px;
+  }
+}
+
+.description-list__item--leaf-style {
+  &::before {
+    @include common-pseudo (60px, 60px);
+    background-image: url("../../icons/stack.svg#leaf");
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 31px;
+    }
+  }
+
+  &::after {
+    @include text-format ($second-font, 280px, 100%, #f2f2f2);
+    content: "1";
+    position: absolute;
+    top: -39px;
+    right: 0;
+  }
+}
+
+
+.description-list__item--powder-style::before {
+  @include common-pseudo (60px, 60px);
+  background-image: url("../../icons/stack.svg#powder");
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.description-list__item--cutlery-style::before {
+  @include common-pseudo (60px, 60px);
+  background-image: url("../../icons/stack.svg#cutlery");
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.description-list__item--clock-style::before {
+  @include common-pseudo (60px, 60px);
+  background-image: url("../../icons/stack.svg#clock");
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
+}

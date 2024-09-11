@@ -1,5 +1,9 @@
 .main-header {
   padding: 13px 20px 14px;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 0;
+  }
 }
 
 .main-header__navigation {
@@ -12,11 +16,23 @@
   display: flex;
   align-items: center;
   margin-right: 65px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 94px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: auto;
+  }
 }
 
 .main-header__logo-image {
   display: inline-block;
   margin-right: 56px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 13px;
+  }
 }
 
 .main-header__menu-button {
@@ -25,6 +41,10 @@
   border: none;
   cursor: pointer;
   background-color: $primary-bg-color;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 
   &::after {
     @include absolute-center;
@@ -39,9 +59,9 @@
 
 .main-header__list {
   display: none;
-}
+  margin: 0;
 
-.main-header__link {
-  @include text-format ($second-font, 20px, 100%, $second-text-color);
-  text-transform: uppercase;
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }

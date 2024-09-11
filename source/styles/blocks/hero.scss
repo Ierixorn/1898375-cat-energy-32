@@ -3,7 +3,29 @@
   flex-direction: column;
   align-items: center;
   padding: 27px 20px 10px;
-  background-color: $third-bg-color;
+  background:
+    linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 62%, rgba(255, 255, 255) 38%),
+    url("../../images/hero-background-mobile@2x.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding: 40px 180px 526px 90px;
+    align-items: start;
+    background: none;
+    background-color: $primary-bg-color;
+  }
+}
+
+.hero .section-title {
+  color: $third-text-color;
+
+  @media (min-width: $tablet-width) {
+    text-align: start;
+    color: $second-text-color;
+    z-index: 2;
+  }
 }
 
 .hero__title {
@@ -11,6 +33,17 @@
   margin: 0;
   margin-bottom: 25px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+    z-index: 2;
+  }
+}
+
+.hero__title br {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .hero__slogan {
@@ -19,12 +52,32 @@
   margin: 0;
   margin-bottom: 29px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+    font-size: 20px;
+    color: $second-text-color;
+    z-index: 2;
+  }
 }
 
 .hero__image {
   order: 3;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+  }
 }
 
 .hero__button {
+  width: 280px;
   order: 4;
+
+  @media (min-width: $tablet-width) {
+    width: 244px;
+    z-index: 2;
+  }
 }

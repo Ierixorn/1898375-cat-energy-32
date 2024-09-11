@@ -1,4 +1,7 @@
 .primary-button {
   @include text-format ($second-font, 16px, 130%, $third-text-color);
+  padding: 10px;
   background-color: $third-bg-color;
+  text-transform: uppercase;
+  text-align: center;
 }
