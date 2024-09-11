@@ -8,16 +8,40 @@
   flex-wrap: wrap;
   gap: 17px;
   padding: 26px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 70px;
+    justify-content: space-between;
+    background-color: $primary-bg-color;
+  }
 }
 
 .map__slogan {
   @include text-format ($second-font, 16px, 125%, $second-text-color);
   margin: 0;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 130%;
+  }
 }
 
 .map__text {
   margin: 0;
   font-size: 14px;
   line-height: 143%;
+
+  @media (min-width: $tablet-width) {
+    text-align: end;
+    font-size: 16px;
+    line-height: 125%;
+  }
+}
+
+.map__text span {
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    margin-top: 19px;
+  }
 }

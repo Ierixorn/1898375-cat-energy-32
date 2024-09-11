@@ -1,24 +1,36 @@
 .case-section {
   padding: 25px 20px 40px;
   background-color: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255) 62%, rgb(242, 242, 242) 38%),;
+  }
 }
 
 .case-section__description-wrapper {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 104px;
+  }
 }
 
 .case-section__title {
   margin: 0;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .case-section__text {
   margin: 0;
   margin-bottom: 20px;
-}
 
-.case-section__result {
-  width: 280px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
 }
 
 .case-section__parameter {
@@ -48,6 +60,10 @@
   background-color: $five-bg-color;
   z-index: 1;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    height: 512px;
+  }
 
   &:is(:hover, :focus-visible, :focus) {
     background-color: $third-bg-color;

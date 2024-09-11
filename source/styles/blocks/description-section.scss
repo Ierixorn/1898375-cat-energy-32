@@ -1,15 +1,29 @@
 
 .description-section {
+  position: relative;
   padding: 10px 20px 49px;
 
   @media (min-width: $tablet-width) {
     padding: 45px 30px;
+
+    &::after {
+      @include common-pseudo (768px, 1px);
+      position: absolute;
+      top: 96%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #e6e6e6;
+    }
   }
 }
 
 .description-section__title {
   margin: 0;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
 }
 
 .description-section__list {

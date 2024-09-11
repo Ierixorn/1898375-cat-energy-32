@@ -2,10 +2,18 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
 }
 
 .case-result__wrapper {
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .case-result__parameter {
@@ -16,21 +24,39 @@
   border: 1px solid #cdcdcd;
   border-radius: 3px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    height: 72px;
+    font-size: 30px;
+    line-height: 123%;
+  }
 }
 
 .case-result__parameter-description {
   @include text-format ($primary-font, 12px, 100%, $primary-text-color);
   position: absolute;
   width: 87px;
-  height: 31px;
-  top: 47px;
-  left: 18px;
+  top: 106%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-size: 12px;
   line-height: 100%;
   text-align: center;
   background-color: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    width: min-content;
+    top: 98%;
+    padding: 0 7px;
+    white-space: nowrap;
+    font-size: 14px;
+    background-color: $primary-bg-color;
+  }
 }
 
-.case-result__price {
-  margin: 0;
+.case-result__parameter-description br {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

@@ -39,36 +39,75 @@
     position: absolute;
     top: -39px;
     right: 0;
+    z-index: -1;
   }
 }
 
 
-.description-list__item--powder-style::before {
-  @include common-pseudo (60px, 60px);
-  background-image: url("../../icons/stack.svg#powder");
+.description-list__item--powder-style {
+  &::before {
+    @include common-pseudo (60px, 60px);
+    background-image: url("../../icons/stack.svg#powder");
 
-  @media (min-width: $tablet-width) {
-    width: 80px;
-    height: 80px;
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 31px;
+    }
+  }
+
+  &::after {
+    @include text-format ($second-font, 280px, 100%, #f2f2f2);
+    content: "2";
+    position: absolute;
+    top: -39px;
+    right: 0;
+    z-index: -1;
   }
 }
 
-.description-list__item--cutlery-style::before {
-  @include common-pseudo (60px, 60px);
-  background-image: url("../../icons/stack.svg#cutlery");
+.description-list__item--cutlery-style {
+  &::before {
+    @include common-pseudo (60px, 60px);
+    background-image: url("../../icons/stack.svg#cutlery");
 
-  @media (min-width: $tablet-width) {
-    width: 80px;
-    height: 80px;
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 31px;
+    }
+  }
+
+  &::after {
+    @include text-format ($second-font, 280px, 100%, #f2f2f2);
+    content: "3";
+    position: absolute;
+    top: -39px;
+    right: 0;
+    z-index: -1;
   }
 }
 
-.description-list__item--clock-style::before {
-  @include common-pseudo (60px, 60px);
-  background-image: url("../../icons/stack.svg#clock");
 
-  @media (min-width: $tablet-width) {
-    width: 80px;
-    height: 80px;
+.description-list__item--clock-style {
+  &::before {
+    @include common-pseudo (60px, 60px);
+    background-image: url("../../icons/stack.svg#clock");
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 31px;
+    }
+  }
+
+  &::after {
+    @include text-format ($second-font, 280px, 100%, #f2f2f2);
+    content: "4";
+    position: absolute;
+    top: -39px;
+    right: 0;
+    z-index: -1;
   }
 }
+
