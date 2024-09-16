@@ -1,6 +1,10 @@
 .map {
   padding-bottom: 20px;
   background-color: $second-bg-color;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
 }
 
 .map__text-wrapper {
@@ -13,6 +17,13 @@
     padding: 60px 70px;
     justify-content: space-between;
     background-color: $primary-bg-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 95px;
+    left: 105px;
+    width: 565px;
   }
 }
 

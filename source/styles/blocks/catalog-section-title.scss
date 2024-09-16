@@ -1,3 +1,21 @@
 .catalog-section-title {
   @include text-format ($second-font, 24px, 100%, $second-text-color);
+  position: relative;
+  font-weight: 400;
+
+  &::before {
+    @include common-pseudo (34px, 2px);
+    position: absolute;
+    top: 46%;
+    left: 101%;
+    transform: translate(-50%, -50%);
+    background-color: $third-bg-color;
+  }
+}
+
+.catalog-section-title--long-line {
+  &::before {
+    width: 108px;
+    left: 87%;
+  }
 }

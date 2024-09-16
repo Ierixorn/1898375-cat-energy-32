@@ -5,14 +5,24 @@
 
   @media (min-width: $tablet-width) {
     padding: 45px 30px;
+  }
 
-    &::after {
+  @media (min-width: $desktop-width) {
+    padding: 40px 106px 40px 110px;
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
       @include common-pseudo (768px, 1px);
       position: absolute;
       top: 96%;
       left: 50%;
       transform: translate(-50%, -50%);
       background-color: #e6e6e6;
+    }
+
+    @media (min-width: $tablet-width) {
+      display: none;
     }
   }
 }

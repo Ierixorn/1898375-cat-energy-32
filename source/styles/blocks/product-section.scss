@@ -5,28 +5,12 @@
   @media (min-width: $tablet-width) {
     padding: 0 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 82px 110px 31px;
+  }
 }
 
 .product-section__list {
   margin: 0;
-}
-
-.product-section__item--slim-cat::before {
-  content: "";
-  position: absolute;
-  width: 50px;
-  height: 53px;
-  background-image: url("../../icons/stack.svg#slim-cat");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.product-section__item--strong-cat::before {
-  content: "";
-  position: absolute;
-  width: 68px;
-  height: 50px;
-  background-image: url("../../icons/stack.svg#strong-cat");
-  background-repeat: no-repeat;
-  background-size: cover;
 }

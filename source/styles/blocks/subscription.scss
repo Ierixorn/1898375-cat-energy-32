@@ -1,20 +1,40 @@
+.subscription {
+  padding: 20px 20px 40px;
+}
+
+.subscription__title {
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.subscription__form {
+  text-align: center;
+}
+
 .subscription__slogan {
   @include text-format ($second-font, 16px, 150%, $second-text-color);
+  display: inline-block;
+  margin-bottom: 24px;
 }
 
 .subscription__input {
+  @include text-format ($second-font, 20px, 150%, $primary-text-color);
   width: 280px;
   padding: 13px;
+  margin-bottom: 16px;
   border: 1px solid #cdcdcd;
   font-size: 20px;
   line-height: 150%;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .subscription__input::placeholder {
-  font-size: 20px;
-  line-height: 150%;
+  @include text-format ($second-font, 20px, 150%, $primary-text-color);
   text-transform: uppercase;
-  text-align: center;
+  text-align: start;
+}
+
+.subscription__button {
+  width: 280px;
+  border: none;
 }

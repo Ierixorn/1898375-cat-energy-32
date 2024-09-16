@@ -7,6 +7,12 @@
     grid-template-rows: repeat(2, 280px);
     gap: 37px 137px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+  }
 }
 
 .description-list__item {
@@ -15,13 +21,20 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
+    width: 250px;
     flex-direction: column;
     align-items: start;
-    width: 250px;
   }
 }
 
 .description-list__item--leaf-style {
+  @media (min-width: $desktop-width) {
+    width: 230px;
+    padding-top: 40px;
+    padding-bottom: 57px;
+    margin-right: 94px;
+  }
+
   &::before {
     @include common-pseudo (60px, 60px);
     background-image: url("../../icons/stack.svg#leaf");
@@ -34,17 +47,30 @@
   }
 
   &::after {
-    @include text-format ($second-font, 280px, 100%, #f2f2f2);
-    content: "1";
-    position: absolute;
-    top: -39px;
-    right: 0;
-    z-index: -1;
+    @media (min-width: $tablet-width) {
+      @include text-format ($second-font, 280px, 100%, #f2f2f2);
+      content: "1";
+      position: absolute;
+      top: -39px;
+      right: 0;
+      z-index: -1;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -1px;
+    }
   }
 }
 
 
 .description-list__item--powder-style {
+  @media (min-width: $desktop-width) {
+    width: 246px;
+    padding-top: 40px;
+    padding-bottom: 57px;
+    margin-right: 80px;
+  }
+
   &::before {
     @include common-pseudo (60px, 60px);
     background-image: url("../../icons/stack.svg#powder");
@@ -57,16 +83,30 @@
   }
 
   &::after {
-    @include text-format ($second-font, 280px, 100%, #f2f2f2);
-    content: "2";
-    position: absolute;
-    top: -39px;
-    right: 0;
-    z-index: -1;
+    @media (min-width: $tablet-width) {
+      @include text-format ($second-font, 280px, 100%, #f2f2f2);
+      content: "2";
+      position: absolute;
+      top: -39px;
+      right: 0;
+      z-index: -1;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -1px;
+    }
   }
 }
 
 .description-list__item--cutlery-style {
+  @media (min-width: $desktop-width) {
+    top: -1px;
+    width: 248px;
+    padding-top: 40px;
+    padding-bottom: 57px;
+    margin-right: 76px;
+  }
+
   &::before {
     @include common-pseudo (60px, 60px);
     background-image: url("../../icons/stack.svg#cutlery");
@@ -79,17 +119,30 @@
   }
 
   &::after {
-    @include text-format ($second-font, 280px, 100%, #f2f2f2);
-    content: "3";
-    position: absolute;
-    top: -39px;
-    right: 0;
-    z-index: -1;
+    @media (min-width: $tablet-width) {
+      @include text-format ($second-font, 280px, 100%, #f2f2f2);
+      content: "3";
+      position: absolute;
+      top: -39px;
+      right: 0;
+      z-index: -1;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -1px;
+    }
   }
 }
 
 
 .description-list__item--clock-style {
+  @media (min-width: $desktop-width) {
+    top: -1px;
+    width: 250px;
+    padding-top: 40px;
+    padding-bottom: 57px;
+  }
+
   &::before {
     @include common-pseudo (60px, 60px);
     background-image: url("../../icons/stack.svg#clock");
@@ -102,12 +155,18 @@
   }
 
   &::after {
-    @include text-format ($second-font, 280px, 100%, #f2f2f2);
-    content: "4";
-    position: absolute;
-    top: -39px;
-    right: 0;
-    z-index: -1;
+    @media (min-width: $tablet-width) {
+      @include text-format ($second-font, 280px, 100%, #f2f2f2);
+      content: "4";
+      position: absolute;
+      top: -39px;
+      right: 0;
+      z-index: -1;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -1px;
+    }
   }
 }
 

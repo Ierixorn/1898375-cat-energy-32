@@ -11,4 +11,9 @@
     font-size: 20px;
     line-height: 100%;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 63px;
+  }
 }

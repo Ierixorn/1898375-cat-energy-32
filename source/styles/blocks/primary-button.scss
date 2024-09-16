@@ -3,5 +3,12 @@
   padding: 10px;
   background-color: $third-bg-color;
   text-transform: uppercase;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.primary-button--empty-version {
+  color: $primary-text-color;
+  background-color: $second-bg-color;
 }
