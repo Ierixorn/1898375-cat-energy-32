@@ -5,10 +5,31 @@
 .subscription__title {
   margin: 0;
   margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    padding: 0 40px;
+    margin-bottom: 66px;
+  }
 }
 
 .subscription__form {
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.subscription__inner-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .subscription__slogan {
@@ -26,6 +47,11 @@
   font-size: 20px;
   line-height: 150%;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 376px;
+    margin-bottom: 0;
+  }
 }
 
 .subscription__input::placeholder {
@@ -37,4 +63,11 @@
 .subscription__button {
   width: 280px;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+    padding: 15px;
+    font-size: 20px;
+    line-height: 130%;
+  }
 }

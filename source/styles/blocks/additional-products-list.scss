@@ -1,9 +1,15 @@
 .additional-products-list {
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 38px 28px;
+    outline: 1px solid #cdcdcd;
+  }
 }
 
 .additional-products-list__item {
   position: relative;
+
 
   &::before {
     @include common-pseudo (280px, 1px);
@@ -25,6 +31,20 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #cdcdcd;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:first-child::before {
+      display: none;
+    }
+
+    &:not(:first-child)::before {
+      width: 708px;
+    }
+
+    &:last-child::after {
+      display: none;
+    }
   }
 }
 

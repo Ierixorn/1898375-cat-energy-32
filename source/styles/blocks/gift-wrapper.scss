@@ -7,6 +7,7 @@
     url("../../images/gift-background-mobile@2x.png");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: 0 60%;
 }
 
 .gift-wrapper__text {
@@ -19,5 +20,16 @@
     margin: 0 auto;
     margin-bottom: 61px;
     background-image: url("../../icons/stack.svg#gift");
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+      margin-right: 275px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    text-align: left;
   }
 }

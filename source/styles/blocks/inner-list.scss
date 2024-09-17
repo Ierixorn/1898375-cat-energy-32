@@ -2,6 +2,10 @@
   @include text-format ($primary-font, 12px, 133%, $primary-text-color);
   display: grid;
   grid-template-areas: "inner-list__value-name inner-list__value";
+
+  @media (min-width: $tablet-width) {
+    row-gap: 10px;
+  }
 }
 
 .inner-list--additional-products {
@@ -16,3 +20,4 @@
 .inner-list__value {
   text-align: right;
 }
+
