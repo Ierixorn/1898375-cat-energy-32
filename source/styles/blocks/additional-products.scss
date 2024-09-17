@@ -1,5 +1,29 @@
 .additional-products {
   padding: 25px 20px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 54px 30px;
+  }
+}
+
+.additional-products__title {
+  margin: 0;
+  margin-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    padding: 0 40px;
+  }
+}
+
+.additional-products__list {
+  margin: 0;
+  margin-bottom: 54px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
 }
 
 .additional-products__gift-wrapper {

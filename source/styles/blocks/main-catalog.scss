@@ -1,0 +1,13 @@
+.main-catalog {
+  padding-top: 27px;
+}
+
+.main-catalog__title {
+  margin: 0;
+  margin-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 30px;
+    margin-bottom: 125px;
+  }
+}
