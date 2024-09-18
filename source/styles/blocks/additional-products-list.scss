@@ -6,7 +6,7 @@
     outline: 1px solid #cdcdcd;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding: 0;
     outline: none;
   }
@@ -110,7 +110,7 @@
 }
 
 .additional-products-list__item-button {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     width: 244px;
     height: 40px;
     align-self: center;

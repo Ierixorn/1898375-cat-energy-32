@@ -1,5 +1,14 @@
 .subscription {
   padding: 20px 20px 40px;
+
+  @media (min-width: $tablet-width) {
+    padding: 40px 30px 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    padding: 111px 110px 104px;
+  }
 }
 
 .subscription__title {
@@ -10,6 +19,13 @@
     display: inline-block;
     padding: 0 40px;
     margin-bottom: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    left: 69px;
+    margin-bottom: 0;
   }
 }
 
@@ -36,6 +52,17 @@
   @include text-format ($second-font, 16px, 150%, $second-text-color);
   display: inline-block;
   margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 133%;
+  }
+}
+
+.subscription__slogan br {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .subscription__input {

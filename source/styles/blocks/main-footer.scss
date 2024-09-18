@@ -7,7 +7,7 @@
   background-color: $second-bg-color;
 
   @media (min-width: $tablet-width) {
-    padding: 55px 30px;
+    padding: 62px 30px;
     flex-direction: row;
     align-items: center;
     justify-content: start;
@@ -15,7 +15,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 67.5px 110px;
+    padding: 72.5px 110px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -61,7 +61,7 @@
   height: 24px;
 
   @media (min-width: $desktop-width) {
-    height: 54px;
+    height: 25px;
   }
 }
 

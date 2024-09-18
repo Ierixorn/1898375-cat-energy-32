@@ -2,6 +2,11 @@
   padding-bottom: 20px;
   background-color: $second-bg-color;
 
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding-bottom: 0;
+  }
+
   @media (min-width: $desktop-width) {
     position: relative;
   }
@@ -24,6 +29,12 @@
     top: 95px;
     left: 105px;
     width: 565px;
+  }
+}
+
+.map__text-wrapper--change-background {
+  @media (min-width: $tablet-width) {
+    background-color: $second-bg-color;
   }
 }
 

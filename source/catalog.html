@@ -19,7 +19,7 @@
     <nav class="main-header__navigation ">
       <a class="main-header__logo" href="#">
         <picture>
-          <source media="(min-width: 1220px)" srcset="images/logo-tablet.svg" width="70" height="59" type="image/svg+xml">
+          <source media="(min-width: 1440px)" srcset="images/logo-tablet.svg" width="70" height="59" type="image/svg+xml">
           <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
           <img class="main-header__logo-image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
         </picture>
@@ -80,7 +80,7 @@
         <li class="catalog-list__item ">
           <a class="catalog-list__image-link" href="#">
             <picture>
-              <source media="(min-width: 1280px)" width="172" height="196" type="image/png" srcset="images/chiken-1000-desktop@1x.png 1x, images/chiken-1000-desktop@2x.png 2x">
+              <source media="(min-width: 1440px)" width="172" height="196" type="image/png" srcset="images/chiken-1000-desktop@1x.png 1x, images/chiken-1000-desktop@2x.png 2x">
               <source media="(min-width: 768px)" width="168" height="206" type="image/png" srcset="images/chiken-1000-tablet@1x.png 1x, images/chiken-1000-tablet@2x.png 2x">
               <img class="catalog-list__item-image" width="84" height="100" src="images/chiken-1000-mobile@1x.png" srcset="images/chiken-1000-tablet@2x.png 2x" alt="Пластиковый стакан с едой">
             </picture>
@@ -125,7 +125,7 @@
         <li class="catalog-list__item ">
           <a class="catalog-list__image-link" href="#">
             <picture>
-              <source media="(min-width: 1280px)" width="172" height="196" type="image/png" srcset="images/fish-1000-desktop@1x.png 1x, images/fish-1000-desktop@2x.png 2x">
+              <source media="(min-width: 1440px)" width="172" height="196" type="image/png" srcset="images/fish-1000-desktop@1x.png 1x, images/fish-1000-desktop@2x.png 2x">
               <source media="(min-width: 768px)" width="168" height="206" type="image/png" srcset="images/fish-1000-tablet@1x.png 1x, images/fish-1000-tablet@2x.png 2x">
               <img class="catalog-list__item-image" width="84" height="100" src="images/fish-1000-mobile@1x.png" srcset="images/fish-1000-tablet@2x.png 2x" alt="Пластиковый стакан с едой">
             </picture>
@@ -170,7 +170,7 @@
         <li class="catalog-list__item ">
           <a class="catalog-list__image-link" href="#">
             <picture>
-              <source media="(min-width: 1280px)" width="172" height="196" type="image/png" srcset="images/buckwheat-1000-desktop@1x.png 1x, images/buckwheat-1000-desktop@2x.png 2x">
+              <source media="(min-width: 1440px)" width="172" height="196" type="image/png" srcset="images/buckwheat-1000-desktop@1x.png 1x, images/buckwheat-1000-desktop@2x.png 2x">
               <source media="(min-width: 768px)" width="168" height="206" type="image/png" srcset="images/buckwheat-1000-tablet@1x.png 1x, images/buckwheat-1000-tablet@2x.png 2x">
               <img class="catalog-list__item-image" width="84" height="100" src="images/buckwheat-1000-mobile@1x.png" srcset="images/buckwheat-1000-tablet@2x.png 2x" alt="Пластиковый стакан с едой">
             </picture>
@@ -269,16 +269,16 @@
     <section class="main-catalog__subscription subscription">
       <h2 class="subscription__title catalog-section-title catalog-section-title--long-line">Акции и новинки</h2>
       <form class="subscription__form" action="https://echo.htmlacademy.ru/" method="post" name="subscription-form">
-        <label class="subscription__slogan" for="subscription-input">Подпишитесь на наши новости и не пропустите ни одного предложения!</label>
+        <label class="subscription__slogan" for="subscription-input">Подпишитесь на наши новости и не пропустите ни одного<br> предложения!</label>
         <div class="subscription__inner-wrapper">
           <input class="subscription__input" type="email" placeholder="кuklachev@gmail.com" name="subscription-email" id="subscription-input">
-          <button class="subscription__button primary-button" type="submit">Подписаться</button>
+          <button class="subscription__button primary-button primary-button--subscription-style" type="submit">Подписаться</button>
         </div>
       </form>
     </section>
 
     <section class="map">
-      <div class="map__text-wrapper">
+      <div class="map__text-wrapper map__text-wrapper--change-background">
         <h2 class="visually-hidden">Карта проезда в магазин.</h2>
         <p class="map__slogan">приглашаем<br> к сотрудничеству<br> дилеров!</p>
         <p class="map__text">ул. Большая<br>Конюшенная, д. 19/8<br><span>Санкт-Петербург</span></p>

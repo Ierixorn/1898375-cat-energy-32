@@ -7,7 +7,7 @@
 
   @media (min-width: $desktop-width) {
     position: relative;
-    padding: 96px 109px 30px 111px;
+    padding: 96px 109px 110px 111px;
   }
 }
 
@@ -33,6 +33,11 @@
 .additional-products__inner-wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
   }
 }
 
@@ -45,17 +50,15 @@
     margin-bottom: 70px;
   }
 
-  @media (min-width: $tablet-width) {
-    margin-bottom: 70px;
-  }
-
   @media (min-width: $desktop-width) {
     margin-right: 81px;
-    margin-bottom: 96px;
+    margin-bottom: 0;
   }
 }
 
 .additional-products__gift-wrapper {
-  width: 245px;
-  height: 288px;
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 288px;
+  }
 }
