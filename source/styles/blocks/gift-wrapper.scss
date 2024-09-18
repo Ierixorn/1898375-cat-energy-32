@@ -8,6 +8,14 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 60%;
+
+  @media (min-width: $tablet-width) {
+    padding: 65.5px 10px 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 56px 42px 43px;
+  }
 }
 
 .gift-wrapper__text {
@@ -22,8 +30,13 @@
     background-image: url("../../icons/stack.svg#gift");
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 0;
+      margin: 0;
       margin-right: 275px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 0;
+      margin-bottom: 46px;
     }
   }
 
@@ -31,5 +44,12 @@
     display: flex;
     align-items: center;
     text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }

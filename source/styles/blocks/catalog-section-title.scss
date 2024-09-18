@@ -11,16 +11,20 @@
   &::after {
     @include common-pseudo (34px, 2px);
     position: absolute;
-    top: 46%;
+    top: 50%;
     left: 101%;
     transform: translate(-50%, -50%);
     background-color: $third-bg-color;
 
     @media (min-width: $tablet-width) {
       width: 768px;
-      top: 50%;
       left: 93%;
       z-index: -1;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1440px;
+      left: 172%;
     }
   }
 }
@@ -32,8 +36,13 @@
 
     @media (min-width: $tablet-width) {
       width: 768px;
-      top: 50%;
       left: 129%;
+      z-index: -1;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1440px;
+      left: 248%;
       z-index: -1;
     }
   }
