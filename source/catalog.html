@@ -16,7 +16,7 @@
 <body class="page__body catalog-body">
 
   <header class="catalog-body__main-header main-header">
-    <nav class="main-header__navigation ">
+    <nav class="main-header__navigation main-navigation main-navigation--closed main-navigation--nojs ">
       <a class="main-header__logo" href="#">
         <picture>
           <source media="(min-width: 1440px)" srcset="images/logo-tablet.svg" width="70" height="59" type="image/svg+xml">
@@ -25,27 +25,29 @@
         </picture>
         <img class="main-header__logo-text" src="images/logo-text.svg" width="101" height="18" alt="Название магазина.">
       </a>
-      <button class="main-header__menu-button" type="button" aria-label="Открыть меню"></button>
-      <ul class="main-header__list navigation-list">
-        <li class="navigation-list__item">
-          <a class="main-header-link main-header-link--change-color" href="index.html">
-            Главная
-            <span class="visually-hidden">Переход на главную страницу сайта.</span>
-          </a>
-        </li>
-        <li class="navigation-list__item">
-          <a class="main-header-link main-header-link--change-color main-header-link--active" href="catalog.html">
-            Каталог продукции
-            <span class="visually-hidden">Переход на страницу каталога.</span>
-          </a>
-        </li>
-        <li class="navigation-list__item">
-          <a class="main-header-link main-header-link--change-color" href="#">
-            Подбор программы
-            <span class="visually-hidden">Переход на страницу подбора программы.</span>
-          </a>
-        </li>
-      </ul>
+      <button class="main-navigation__menu-button" type="button" aria-label="Открыть меню"></button>
+      <div class="main-navigation__inner-wrapper">
+        <ul class="main-navigation__list navigation-list">
+          <li class="navigation-list__item">
+            <a class="navigation-list__link main-header-link main-header-link--change-color" href="index.html">
+              Главная
+              <span class="visually-hidden">Переход на главную страницу сайта.</span>
+            </a>
+          </li>
+          <li class="navigation-list__item">
+            <a class="navigation-list__link main-header-link main-header-link--active main-header-link--change-color" href="#">
+              Каталог продукции
+              <span class="visually-hidden">Переход на страницу каталога.</span>
+            </a>
+          </li>
+          <li class="navigation-list__item">
+            <a class="navigation-list__link main-header-link main-header-link--change-color" href="#">
+              Подбор программы
+              <span class="visually-hidden">Переход на страницу подбора программы.</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
 

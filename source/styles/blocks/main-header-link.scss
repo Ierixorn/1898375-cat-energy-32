@@ -1,8 +1,10 @@
 .main-header-link {
   @include text-format ($second-font, 20px, 100%, $second-text-color);
+  padding: 22px 0;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
     font-size: 18px;
     line-height: 133%;
   }

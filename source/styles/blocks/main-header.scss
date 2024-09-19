@@ -44,28 +44,6 @@
   }
 }
 
-.main-header__menu-button {
-  position: relative;
-  padding: 12px;
-  border: none;
-  cursor: pointer;
-  background-color: $primary-bg-color;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-
-  &::after {
-    @include absolute-center;
-    content: "";
-    width: 24px;
-    height: 16px;
-    mask-image: url("../../icons/stack.svg#menu-burger");
-    mask-size: contain;
-    background-color: $fourth-bg-color;
-  }
-}
-
 .main-header__list {
   display: none;
   margin: 0;
