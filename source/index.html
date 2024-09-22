@@ -54,10 +54,10 @@
   <main class="index-body__main main-index">
     <h1 class="visually-hidden">Магазин Кэт энерджи.</h1>
 
-    <section class="hero">
-      <h2 class="hero__title section-title section-title--change-color">Функциональное<br> питание для котов</h2>
+    <section class="main-index__hero hero">
+      <h2 class="hero__title section-title section-title--change-color">Функциональное<br>питание для котов</h2>
       <p class="hero__slogan">Занялся собой? Займись котом!</p>
-      <a class="hero__button primary-button" href="#">Подобрать программу</a>
+      <a class="hero__button primary-button .primary-button--hero-style" href="#">Подобрать программу</a>
       <picture>
         <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="images/catfood-desktop@1x.png 1x, images/catfood-desktop@2x.png 2x">
         <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/catfood-tablet@1x.png 1x, images/catfood-tablet@2x.png 2x">
@@ -65,7 +65,7 @@
       </picture>
     </section>
 
-    <section class="product-section">
+    <section class="main-index__product-section product-section">
       <h2 class="visually-hidden">Программы питания</h2>
       <ul class="product-section__list product-list">
         <li class="product-list__item product-list__item--slim-cat">
@@ -81,7 +81,7 @@
       </ul>
     </section>
 
-    <section class="description-section">
+    <section class="main-index__description-section description-section">
       <h2 class="description-section__title section-title">Как это работает</h2>
       <ul class="description-section__list description-list">
         <li class="description-list__item description-list__item--leaf-style">
@@ -102,7 +102,7 @@
     <section class="case-section">
       <div class="case-section__description-wrapper">
         <h2 class="case-section__title section-title">Живой пример</h2>
-        <p class="case-section__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своихпривычек и по-прежнему спит по 16 часов в день.</p>
+        <p class="case-section__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
         <div class="case-result">
           <div class="case-result__wrapper parameters">
             <p class="case-section__parameter case-result__parameter">
@@ -114,7 +114,7 @@
               <span class="case-result__parameter-description">затрачено<br> времени</span>
             </p>
           </div>
-          <p class="case-price">
+          <p class="case-result__price case-price">
             <span>Затраты на питание:</span>
             <span>15 000 руб.</span>
           </p>
@@ -135,17 +135,20 @@
       </div>
     </section>
 
-    <section class="map">
+    <section class="main-index__map map">
       <div class="map__text-wrapper">
         <h2 class="visually-hidden">Карта проезда в магазин.</h2>
         <p class="map__slogan">приглашаем<br> к сотрудничеству<br> дилеров!</p>
         <p class="map__text">ул. Большая<br>Конюшенная, д. 19/8<br><span>Санкт-Петербург</span></p>
       </div>
-      <picture>
-        <source media="(min-width: 1440px)" width="1440" height="400" type="image/jpg" srcset="images/map-desktop@1x.jpg 1x, images/map-desktop@2x.jpg 2x">
-        <source media="(min-width: 768px)" width="768" height="400" type="image/jpg" srcset="images/map-tablet@1x.jpg 1x, images/map-tablet@2x.jpg 2x">
-        <img class="map__image" width="320" height="362" src="images/map-mobile@1x.jpg" srcset="images/map-mobile@2x.jpg 2x" alt="Адресс магазина.">
-      </picture>
+      <div class="map__image-wrapper">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991032728616!2d30.3230833!3d59.9387942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1727015384941!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
+        <picture>
+          <source media="(min-width: 1440px)" width="1440" height="400" type="image/jpg" srcset="images/map-desktop@1x.jpg 1x, images/map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" width="768" height="400" type="image/jpg" srcset="images/map-tablet@1x.jpg 1x, images/map-tablet@2x.jpg 2x">
+          <img class="map__image" width="320" height="362" src="images/map-mobile@1x.jpg" srcset="images/map-mobile@2x.jpg 2x" alt="Адресс магазина.">
+        </picture>
+      </div>
     </section>
 
   </main>

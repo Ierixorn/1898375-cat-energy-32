@@ -20,13 +20,16 @@
   position: relative;
   width: 320px;
   margin: 0 auto;
+  margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
     width: 768px;
+    margin-bottom: 41px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
+    margin-bottom: 0;
   }
 
   &::before {

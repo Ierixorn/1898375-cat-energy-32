@@ -15,8 +15,18 @@
 
 .inner-list__value-name {
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 125%;
+  }
 }
 
 .inner-list__value {
   text-align: right;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 125%;
+  }
 }

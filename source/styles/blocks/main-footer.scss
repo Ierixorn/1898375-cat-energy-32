@@ -7,7 +7,7 @@
   background-color: $second-bg-color;
 
   @media (min-width: $tablet-width) {
-    padding: 62px 30px;
+    padding: 55px 30px;
     flex-direction: row;
     align-items: center;
     justify-content: start;
@@ -18,7 +18,6 @@
     padding: 72.5px 110px;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
   }
 }
 
@@ -35,7 +34,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 0;
+    margin-right: 416px;
   }
 }
 
@@ -74,9 +73,9 @@
     margin-right: auto;
   }
 
-  @media (min-width: $desktop-width) {
-    margin-right: 0;
-  }
+  // @media (min-width: $desktop-width) {
+  //   margin-right: a;
+  // }
 }
 
 .main-footer__list--line-style {
