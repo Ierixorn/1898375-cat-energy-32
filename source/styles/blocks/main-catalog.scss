@@ -1,3 +1,9 @@
+.main-catalog {
+  @media (min-width: $desktop-width) {
+    padding-top: 188px;
+  }
+}
+
 .main-catalog__title {
   margin: 0;
   margin-left: 20px;
