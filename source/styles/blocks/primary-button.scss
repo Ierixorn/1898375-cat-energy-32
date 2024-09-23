@@ -13,9 +13,11 @@
 }
 
 .primary-button--hero-style {
-  font-size: 20px;
-  line-height: 130%;
-  padding: 14px 26px;
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 130%;
+    padding: 14px 26px;
+  }
 }
 
 

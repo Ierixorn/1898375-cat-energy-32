@@ -4,7 +4,7 @@
 
 .additional-products-list__item {
   position: relative;
-
+  margin-bottom: 31px;
 
   &::before {
     @include common-pseudo (280px, 1px);
@@ -13,6 +13,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #cdcdcd;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
   }
 
   &:last-child::after {
@@ -30,6 +34,7 @@
     grid-template-rows: auto 25px auto;
     padding: 26px 38px 28px;
     outline: 1px solid #cdcdcd;
+    margin: 0;
 
     &:first-child::before {
       display: none;
@@ -114,6 +119,10 @@
 .additional-products-list__inner-list .inner-list__value-name {
   @media (min-width: $tablet-width) {
     text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
   }
 }
 
