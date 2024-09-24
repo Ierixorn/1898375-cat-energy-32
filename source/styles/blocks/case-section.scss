@@ -147,7 +147,7 @@
   }
 
   &:is(:active) {
-    opacity: 0.6;
+    background-color: #5eaa2f;
   }
 
   &::before {
