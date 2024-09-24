@@ -130,10 +130,8 @@
 }
 
 .product-list__link {
-  @include text-format ($second-font, 16px, 100%, $second-text-color);
   width: 133px;
   height: 24px;
-  text-transform: uppercase;
 
   &::before {
     content: " ";
@@ -156,14 +154,19 @@
     margin-left: 15px;
     mask-image: url("../../icons/stack.svg#arrow");
     background-color: $fourth-bg-color;
+    transition: transform 0.3s linear;
+    transform-origin: left center;
 
     @media (min-width: $tablet-width) {
       margin-left: 25px;
     }
   }
 
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 150%;
+  &:is(:hover, :focus, :focus-visible, :active)::after {
+    transform: scaleX(1.35);
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

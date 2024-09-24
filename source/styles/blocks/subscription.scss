@@ -80,14 +80,9 @@
 }
 
 .subscription__input {
-  @include text-format ($second-font, 20px, 150%, $primary-text-color);
   width: 280px;
-  padding: 12px;
   margin-bottom: 16px;
-  border: 1px solid #cdcdcd;
-  font-size: 20px;
-  line-height: 150%;
-  text-transform: uppercase;
+
 
   @media (min-width: $tablet-width) {
     width: 376px;

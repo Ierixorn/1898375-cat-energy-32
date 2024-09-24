@@ -7,6 +7,15 @@
   align-items: center;
   justify-content: center;
 
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgb(255, 255, 255, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     line-height: 125%;
   }
